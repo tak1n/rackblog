@@ -1,0 +1,57 @@
+[path]:ruby-object-model-1[/path]
+[title]:Ruby Object Model Teil 1[/title]
+[content]:
+<p>In diesem Beispiel zeige ich euch die Ruby Objekt Struktur (Ruby Object Model) anhand einer eigenen Klasse und einem Objekt das daraus instanziert wurde. Hier der Beispielcode (test.rb): </p>
+
+<pre class="brush:ruby">
+class MyClass
+     def initialize
+         puts "hi im a new ruby object from the class MyClass"
+     end
+
+     def whoami
+     	self
+     end
+end
+
+myobject = MyClass.new
+puts myobject.whoami
+puts myobject.class
+puts myobject.class.superclass
+puts myobject.class.superclass.superclass
+
+</pre>
+
+<p>Wenn ihr diesen Code ausführt <strong>(ruby test.rb)</strong>  erhaltet ihr folgende Ausgabe beim Terminal:
+<pre class="brush:bash">
+hi im a new ruby object from the class MyClass
+#&lt;MyClass:0x000000006e0488&gt;
+MyClass
+Object
+BasicObject
+</pre>
+<p>Der Hex - Code der von <strong>puts myobject.whoami</strong> ausgegeben wird kann variieren, denn hier wird einfach der Speicherort von myobject angegeben.
+Ihr könnt das ganz einfach testen, indem ihr den Code öfters ausführt. Ergebnis wird sein, dass sich der Hex Code bei jeder Ausführung ändert.</p>
+<p>Unsere Struktur sieht also bisher wie folgt aus:</p>
+<img src="/assets/images/objectmodel_simple.png" alt="Object Model Simple" width="640" height="600" />
+<h2>Singleton Methods und Eigenclass</h2>
+<p>In Ruby kann man ganz einfach Methoden einem Objekt hinzufügen.</p>
+<pre class="brush:ruby">
+myobject.my_singleton_method
+MyClass.my_class_method
+</pre>
+<p>Wie ihr seht sind Class Methods nichts anderes als Singleton Methods auf ein bestimmtes Object (Class) angewendet. Doch in welcher Klasse befindet sich nun solch eine Methode? Wenn man sich das Bild mit der Struktur oben ansieht, kann man keinen geeigneten Platz finden. Der Clue dabei ist, dass mit <strong>.class</strong> & <strong>.superclass</strong> uns Ruby nicht die ganze "Wahrheit" sagt. Es gibt nämlich "versteckte" Classes sogenannte Eigenclasses. Sie werden auch oft Metaclasses oder Singleton Classes genannt.</p>
+<p>Hier ein kurzer Beispiel Code der die Existenz solcher Eigenclasses beweist: Durch <strong>(class << an_object)</strong> öffnet ihr euch die Eigenclass und könnt Methoden (Singleton Methods) definieren.
+</p>
+<pre class="brush: ruby">
+obj = Object.new
+eigenclass = class << obj
+   self
+end
+
+eigenclass.class
+</pre>
+<p>Als Ausgabe im Terminal bekommt ihr <strong>Class</strong>. Dies ist der Beweis, dass der Ort wo diese Methoden dann stehen selbst wieder eine Class ist (Eigenclass)</p>
+<p>Wir haben nun bewiesen, dass Eigenclasses tatsächlich existieren, aber wo in unsere Baumstruktur gehören sie hin. 
+Dazu erfahrt ihr mehr in Teil2 :)</p>
+[/content]

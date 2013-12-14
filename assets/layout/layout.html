@@ -2,9 +2,28 @@
 <html>
 	<head>
 		<title>{title}</title>
+		<!-- Bootstrap files-->
+		<script src="/assets/js/bootstrap.js"></script>
 		<link rel="stylesheet" href="/assets/style/bootstrap.css" type="text/css" media="screen" charset="utf-8">
-		<link rel="stylesheet" href="/assets/style/bootstrap-theme.css" type="text/css" media="screen" charset="utf-8"> 
-		<link rel="stylesheet" href="/assets/style/style.css" type="text/css" media="screen" charset="utf-8"> 
+		<link rel="stylesheet" href="/assets/style/bootstrap-theme.css" type="text/css" media="screen" charset="utf-8">
+
+		<!-- User Files--> 
+		<link rel="stylesheet" href="/assets/style/style.css" type="text/css" media="screen" charset="utf-8">
+
+		<!-- Include required JS Brush files -->
+		<script type="text/javascript" src="/assets/js/highlightercore/shCore.js"></script>
+		<script type="text/javascript" src="/assets/js/highlighter/shBrushRuby.js"></script>
+		<script type="text/javascript" src="/assets/js/highlighter/shBrushCss.js"></script>
+		<script type="text/javascript" src="/assets/js/highlighter/shBrushJava.js"></script>
+		<script type="text/javascript" src="/assets/js/highlighter/shBrushJScript.js"></script>
+		<script type="text/javascript" src="/assets/js/highlighter/shBrushPhp.js"></script>
+		<script type="text/javascript" src="/assets/js/highlighter/shBrushBash.js"></script>
+
+		<!-- Include *at least* the core style and default theme -->
+		<link href="/assets/style/shCore.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/style/shThemeDefault.css" rel="stylesheet" type="text/css" />
+
+		
 	</head>
 	<body>
 		<div class="wrapper">
@@ -12,15 +31,18 @@
 			<div class="content">
 				{content}
 			</div>
-			<div class="nav">
+			<div class="nav well">
 				<ul>
-					<li><a href="/rack-blogengine-middleware" title="#">Rack Blogengine Middleware</a></li>
-					<!--<li><a href="#" title="#">Rack Blogengine Middleware</a></li>
-					<li><a href="#" title="#">Rack Blogengine Middleware</a></li>
-					<li><a href="#" title="#">Rack Blogengine Middleware</a></li>-->
+					<li><a class="btn-primary" href="/rack-blogengine-middleware" title="Rack Blogengine Middleware">Rack Blogengine Middleware</a></li>
+					<li><a class="btn-primary" href="/ruby-object-model-1" title="#">Ruby Object Model Teil 1</a></li>
+					<!--<li><a class="btn-primary" href="#" title="#">Rack Blogengine Middleware</a></li>
+					<li><a class="btn-primary" href="#" title="#">Rack Blogengine Middleware</a></li>-->
 				</ul>
 			</div>
 			<div style="clear:both"></div>
 		</div>
+	<script type="text/javascript">
+      SyntaxHighlighter.all()
+	</script>
 	</body>
 </html>
