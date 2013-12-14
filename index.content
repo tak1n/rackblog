@@ -1,11 +1,5 @@
 [path]:[/path]
 [title]:Welcome to the rack blogengine live demo[/title]
 [content]:
-<p>This is the Index Page</p>
-<h2>Navigation</h2>
-<ul>
-	<li><a href="/test-path" title="Testlink">Test</a></li>
-	<li><a href="/test-path" title="Testlink">Test</a></li>
-	<li><a href="/test-path" title="Testlink">Test</a></li>
-</ul>
+<h2>This is the Index Page</h2>
 [/content]
