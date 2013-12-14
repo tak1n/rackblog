@@ -1,0 +1,12 @@
+[path]:rack-blogengine-middleware[/path]
+[title]:Rack Blogengine Middleware[/title]
+[content]:
+<p>Ein weiterer Gem wurde von mir veröffentlicht.
+Diesmal handelt es sich um eine Rack Middleware die es ermöglicht aus einen Folder (der eine gewisse Struktur besitzt und Files enthält) einene Blog zu generieren.</p>
+<p>Den Sourcecode könnt ihr auf Github unter <a href="https://github.com/Benny1992/rack-blogengine">Benny1992/rack-blogengine</a> finden.
+
+Weiters könnt ihr den Gem auf <a href="http://www.rubygems.org" title="Rubygems.org">rubygems.org</a> herunterladen.</p>
+<p>Bei Bugs, Problemen usw. könnt ihr auf Github eine "Issue" anlegen oder mir direkt eine Mail an <a href="mailto:klotz.benjamin@yahoo.de" title="mail an Benny">klotz.benjamin@yahoo.de</a> schicken.</p>
+<h4>Edit:</h4>
+Eine Livedemo könnt ihr unter <a href="http://85.25.119.52:3000/" title="Rack Blogengine Demo">http://85.25.119.52:3000/</a> begutachten. Verfügbare Links (/style.css, /assets, /, /test-path, /test2)
+[/content]
