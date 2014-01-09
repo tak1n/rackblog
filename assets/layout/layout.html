@@ -2,6 +2,10 @@
 <html>
 	<head>
 		<title>{title}</title>
+
+		<!--jquery-->
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
 		<!-- Bootstrap files-->
 		<script src="/assets/js/bootstrap.js"></script>
 		<link rel="stylesheet" href="/assets/style/bootstrap.css" type="text/css" media="screen" charset="utf-8">
@@ -23,16 +27,21 @@
 		<link href="/assets/style/shCore.css" rel="stylesheet" type="text/css" />
 		<link href="/assets/style/shThemeDefault.css" rel="stylesheet" type="text/css" />
 
+		<!-- Personal Script File -->
+		<script src="assets/js/script.js"></script>
+
 		
 	</head>
 	<body>
+		<a href="#" class="navopen">+</a>
+		<div class="nav well">
+			<a href="#" class="navclose">x</a>
+			{% show_nav %}
+		</div>
 		<div class="wrapper">
 			<h1>{title}</h1>
 			<div class="content">
 				{content}
-			</div>
-			<div class="nav well">
-				{% show_nav %}
 			</div>
 			<div style="clear:both"></div>
 		</div>

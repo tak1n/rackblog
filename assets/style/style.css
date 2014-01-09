@@ -121,29 +121,50 @@ div.wrapper div.content p {
 	margin-bottom: 10px;
 }
 
-div.wrapper div.nav {
-	float: left;
+a.navopen {
+	position: fixed;
+	margin-left: 10px;
+	background: url("/assets/images/nav-icon.png");
+	width: 20px;
+	height: 20px;
+	text-indent: -9999px;
+	margin-top: 60px;
+}
+
+div.nav {
+	position: fixed;
+	display: none;
 	/*background: #4183c4;*/
 	padding: 10px;
 	line-height: 20px;
-	margin-top: 10px;
+	margin-top: 60px;
 	margin-left: 30px;
 }
 
-div.wrapper div.nav li {
+a.navclose {
+	position: absolute;
+	right: -10px;
+	top: -12px;
+	padding: 1px 6px; 
+	color: #fff;
+	background: #4183c4;
+	/*-webkit-border-radius: 20px;*/
+}
+
+div.nav li {
 	margin-bottom: 10px;
 }
 
-div.wrapper div.nav li:last-child {
+div.nav li:last-child {
 	margin-bottom: 0px;
 }
 
-div.wrapper div.nav  li a {
+div.nav  li a {
 	display: block;
 	padding: 10px;
 	border-radius: 5px;
 }
 
-div.wrapper div.nav a:hover {
+div.nav a:hover {
 	text-decoration: none;
 }

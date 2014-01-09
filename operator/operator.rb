@@ -8,6 +8,8 @@ module UserOperator
     end
 
     nav = "<ul>"+links.join()+"</ul>"
-    html["{% show_nav %}"] = nav
+
+    return nav
+    #html["{% show_nav %}"] = nav
   end
 end
