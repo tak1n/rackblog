@@ -1,5 +1,6 @@
 [path]:ruby-object-model-1[/path]
 [title]:Ruby Object Model Teil 1[/title]
+[date]:2013,11,26[/date]
 [content]:
 <p>In diesem Beispiel zeige ich euch die Ruby Objekt Struktur (Ruby Object Model) anhand einer eigenen Klasse und einem Objekt das daraus instanziert wurde. Hier der Beispielcode (test.rb): </p>
 

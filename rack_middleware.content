@@ -1,5 +1,6 @@
 [path]:rack-blogengine-middleware[/path]
 [title]:Rack Blogengine Middleware[/title]
+[date]:2013,12,10[/date]
 [content]:
 <p>Ein weiterer Gem wurde von mir veröffentlicht.
 Diesmal handelt es sich um eine Rack Middleware die es ermöglicht aus einen Folder (der eine gewisse Struktur besitzt und Files enthält) einene Blog zu generieren.</p>

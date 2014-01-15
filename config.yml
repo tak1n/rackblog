@@ -1,2 +1,6 @@
 Port: 3000
-Server: "webrick"
+Server: webrick
+HTTPauth: 
+  username: "benny"
+  password: "benny1234"
+  usage: "yes"
