@@ -1,5 +1,5 @@
 Port: 3000
-Server: webrick
+Server: puma
 HTTPauth: 
   username: "benny"
   password: "benny1234"
