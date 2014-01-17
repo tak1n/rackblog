@@ -3,4 +3,4 @@ Server: puma
 HTTPauth: 
   username: "benny"
   password: "benny1234"
-  usage: "yes"
+  usage: "no"
