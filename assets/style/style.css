@@ -176,3 +176,13 @@ div.nav  li a {
 div.nav a:hover {
 	text-decoration: none;
 }
+
+div.highlight pre {
+	padding: 10px;
+	margin: 5px;
+}
+
+div.highlight span.no {
+	color: #204a87;
+	font-weight: bold;
+}

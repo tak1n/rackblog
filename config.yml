@@ -4,3 +4,7 @@ HTTPauth:
   username: "benny"
   password: "benny1234"
   usage: "no"
+
+Pygments:
+  style: "tango"
+  seperator: "pre"

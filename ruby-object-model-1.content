@@ -44,14 +44,16 @@ MyClass.my_class_method
 <p>Wie ihr seht sind Class Methods nichts anderes als Singleton Methods auf ein bestimmtes Object (Class) angewendet. Doch in welcher Klasse befindet sich nun solch eine Methode? Wenn man sich das Bild mit der Struktur oben ansieht, kann man keinen geeigneten Platz finden. Der Clue dabei ist, dass mit <strong>.class</strong> & <strong>.superclass</strong> uns Ruby nicht die ganze "Wahrheit" sagt. Es gibt nämlich "versteckte" Classes sogenannte Eigenclasses. Sie werden auch oft Metaclasses oder Singleton Classes genannt.</p>
 <p>Hier ein kurzer Beispiel Code der die Existenz solcher Eigenclasses beweist: Durch <strong>(class << an_object)</strong> öffnet ihr euch die Eigenclass und könnt Methoden (Singleton Methods) definieren.
 </p>
-<pre class="brush: ruby">
+
+<pre class="brush:ruby">
 obj = Object.new
-eigenclass = class << obj
+eigenclass = class &lt;&lt; obj
    self
 end
 
 eigenclass.class
 </pre>
+
 <p>Als Ausgabe im Terminal bekommt ihr <strong>Class</strong>. Dies ist der Beweis, dass der Ort wo diese Methoden dann stehen selbst wieder eine Class ist (Eigenclass)</p>
 <p>Wir haben nun bewiesen, dass Eigenclasses tatsächlich existieren, aber wo in unsere Baumstruktur gehören sie hin. 
 Dazu erfahrt ihr mehr in Teil2 :)</p>
